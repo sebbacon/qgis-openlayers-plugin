@@ -34,7 +34,7 @@ from tools_network import getProxy
 from weblayers.weblayer_registry import WebLayerTypeRegistry
 from weblayers.google_maps import OlGooglePhysicalLayer, OlGoogleStreetsLayer, OlGoogleHybridLayer, OlGoogleSatelliteLayer
 from weblayers.osm import OlOpenStreetMapLayer, OlOpenCycleMapLayer, OlOCMLandscapeLayer, OlOCMPublicTransportLayer, OlOSMHumanitarianDataModelLayer
-from weblayers.bing_maps import OlBingRoadLayer, OlBingAerialLayer, OlBingAerialLabelledLayer
+from weblayers.bing_maps import OlBingRoadLayer, OlBingAerialLayer,OlBingAerialLabelledLayer, OlBingOSLayer
 from weblayers.apple_maps import OlAppleiPhotoMapLayer
 from weblayers.osm_stamen import OlOSMStamenTonerLayer, OlOSMStamenTonerLiteLayer, OlOSMStamenWatercolorLayer, OlOSMStamenTerrainLayer
 from weblayers.map_quest import OlMapQuestOSMLayer, OlMapQuestOpenAerialLayer
@@ -92,6 +92,7 @@ class OpenlayersPlugin:
 
         self._olLayerTypeRegistry.register(OlBingRoadLayer())
         self._olLayerTypeRegistry.register(OlBingAerialLayer())
+        self._olLayerTypeRegistry.register(OlBingOSLayer())
         self._olLayerTypeRegistry.register(OlBingAerialLabelledLayer())
 
         self._olLayerTypeRegistry.register(OlOSMStamenTonerLayer())

@@ -43,6 +43,11 @@ class OlBingAerialLayer(OlBingMapsLayer):
     def __init__(self):
         OlBingMapsLayer.__init__(self, name='Bing Aerial', html='bing_aerial.html')
 
+class OlBingOSLayer(OlBingMapsLayer):
+
+    def __init__(self):
+        OlBingMapsLayer.__init__(self, name='Bing OS (UK only)', html='bing_os.html')
+
 
 class OlBingAerialLabelledLayer(OlBingMapsLayer):
 
